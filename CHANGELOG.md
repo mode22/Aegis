@@ -18,16 +18,18 @@ The format below is a template for release tracking.
 ### Notes
 - _None_
 
-## [Version X.Y.Z] - YYYY-MM-DD
+## [0.1.0-test] - 2026-06-03
 
 ### Added
-- 
+- Initial public repository baseline for Aegis release communications.
+- First release notes published as `RELEASE_NOTES_v0.1.0-test.md`.
+- Closed-source repository terms added in `LICENSE.md`.
 
 ### Changed
-- 
+- `latest.json` initialized for version `0.1.0-test`.
 
 ### Fixed
-- 
+- _None_
 
 ### Notes
-- 
+- This is a test release for validating GitHub Releases and repository metadata flow.

@@ -85,11 +85,15 @@ All rights reserved.
 
 The source code, proprietary methodologies, internal components, implementation details, and development assets are not distributed through this repository.
 
+See [`LICENSE.md`](./LICENSE.md) for repository license terms.
+
 ## Repository Contents
 
 - [`CHANGELOG.md`](./CHANGELOG.md) — version history template and change tracking format
 - [`RELEASE_NOTES_TEMPLATE.md`](./RELEASE_NOTES_TEMPLATE.md) — release communication template
-- [`latest.json`](./latest.json) — update manifest example for version distribution
+- [`RELEASE_NOTES_v0.1.0-test.md`](./RELEASE_NOTES_v0.1.0-test.md) — release notes for first test release
+- [`latest.json`](./latest.json) — current update manifest for release distribution
+- [`LICENSE.md`](./LICENSE.md) — closed-source repository license terms
 - [`.github/ISSUE_TEMPLATE/bug_report.md`](./.github/ISSUE_TEMPLATE/bug_report.md) — bug report template
 - [`.github/ISSUE_TEMPLATE/feature_request.md`](./.github/ISSUE_TEMPLATE/feature_request.md) — feature request template
 - [`REPOSITORY_STRUCTURE.md`](./REPOSITORY_STRUCTURE.md) — repository organization reference

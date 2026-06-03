@@ -7,7 +7,9 @@ This document describes the public content layout for the Aegis releases reposit
 - `README.md` — official public-facing project overview and repository purpose
 - `CHANGELOG.md` — template and running log of release-level changes
 - `RELEASE_NOTES_TEMPLATE.md` — standard template for publishing release notes
-- `latest.json` — example version manifest format for update distribution
+- `RELEASE_NOTES_v0.1.0-test.md` — release notes for the first public test release
+- `latest.json` — current JSON version manifest for update distribution
+- `LICENSE.md` — closed-source repository license terms
 - `REPOSITORY_STRUCTURE.md` — this structure reference document
 
 ## GitHub Metadata
