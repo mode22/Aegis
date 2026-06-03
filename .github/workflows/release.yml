@@ -1,0 +1,77 @@
+name: Publish Release Assets
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+  workflow_dispatch:
+    inputs:
+      tag_name:
+        description: 'Tag to release (example: v1.2.3)'
+        required: true
+        type: string
+      release_name:
+        description: 'Release title'
+        required: true
+        type: string
+      prerelease:
+        description: 'Mark release as prerelease'
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate release metadata files
+        run: |
+          test -f latest.json
+          test -f latest.yml
+          python - <<'PY'
+          import json
+          with open('latest.json','r',encoding='utf-8') as f:
+              json.load(f)
+          print('latest.json is valid JSON')
+          PY
+
+      - name: Prepare asset list
+        run: |
+          set -euo pipefail
+          mkdir -p release-assets
+          if [ -d dist ]; then
+            cp -r dist/* release-assets/ || true
+          fi
+          cp latest.json release-assets/
+          cp latest.yml release-assets/
+
+      - name: Generate SHA256SUMS
+        run: |
+          set -euo pipefail
+          cd release-assets
+          find . -maxdepth 1 -type f ! -name 'SHA256SUMS' -print0 | xargs -0 sha256sum > SHA256SUMS
+
+      - name: Create GitHub Release (tag push)
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          generate_release_notes: true
+          files: |
+            release-assets/*
+
+      - name: Create GitHub Release (manual)
+        if: github.event_name == 'workflow_dispatch'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ inputs.tag_name }}
+          name: ${{ inputs.release_name }}
+          prerelease: ${{ inputs.prerelease }}
+          generate_release_notes: true
+          files: |
+            release-assets/*

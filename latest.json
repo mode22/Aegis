@@ -1,0 +1,10 @@
+{
+  "product": "Aegis",
+  "channel": "stable",
+  "latest_version": "X.Y.Z",
+  "release_date": "YYYY-MM-DD",
+  "release_notes": "https://github.com/mode22/Aegis/releases/tag/vX.Y.Z",
+  "changelog": "https://github.com/mode22/Aegis/blob/main/CHANGELOG.md",
+  "mandatory_update": false,
+  "notes": "Example update manifest for version distribution."
+}
