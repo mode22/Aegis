@@ -27,6 +27,7 @@ The format below is a template for release tracking.
 
 ### Changed
 - `latest.json` initialized for version `0.1.0-test`.
+- `latest.yml` initialized for electron-updater compatibility checks.
 
 ### Fixed
 - _None_

@@ -1,0 +1,8 @@
+version: 0.1.0-test
+files:
+  - url: latest.json
+    sha512: lEgdByK2EtjBNVI1iIQLYJ/sqWAKSxAcVfudyixO0OwZClFDcXCJQRNHVwL7qCgmoHHWpKV6FKcCay7ZQo0PRA==
+    size: 374
+path: latest.json
+sha512: lEgdByK2EtjBNVI1iIQLYJ/sqWAKSxAcVfudyixO0OwZClFDcXCJQRNHVwL7qCgmoHHWpKV6FKcCay7ZQo0PRA==
+releaseDate: 2026-06-03T00:00:00Z

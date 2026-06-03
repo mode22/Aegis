@@ -93,6 +93,7 @@ See [`LICENSE.md`](./LICENSE.md) for repository license terms.
 - [`RELEASE_NOTES_TEMPLATE.md`](./RELEASE_NOTES_TEMPLATE.md) — release communication template
 - [`RELEASE_NOTES_v0.1.0-test.md`](./RELEASE_NOTES_v0.1.0-test.md) — release notes for first test release
 - [`latest.json`](./latest.json) — current update manifest for release distribution
+- [`latest.yml`](./latest.yml) — electron-updater compatible metadata for the current test release
 - [`LICENSE.md`](./LICENSE.md) — closed-source repository license terms
 - [`.github/ISSUE_TEMPLATE/bug_report.md`](./.github/ISSUE_TEMPLATE/bug_report.md) — bug report template
 - [`.github/ISSUE_TEMPLATE/feature_request.md`](./.github/ISSUE_TEMPLATE/feature_request.md) — feature request template

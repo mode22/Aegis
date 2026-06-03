@@ -9,6 +9,7 @@ This document describes the public content layout for the Aegis releases reposit
 - `RELEASE_NOTES_TEMPLATE.md` — standard template for publishing release notes
 - `RELEASE_NOTES_v0.1.0-test.md` — release notes for the first public test release
 - `latest.json` — current JSON version manifest for update distribution
+- `latest.yml` — current YAML update metadata for electron-updater compatibility
 - `LICENSE.md` — closed-source repository license terms
 - `REPOSITORY_STRUCTURE.md` — this structure reference document
 
