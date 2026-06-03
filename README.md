@@ -90,6 +90,15 @@ The source code, proprietary methodologies, internal components, implementation 
 - [`CHANGELOG.md`](./CHANGELOG.md) — version history template and change tracking format
 - [`RELEASE_NOTES_TEMPLATE.md`](./RELEASE_NOTES_TEMPLATE.md) — release communication template
 - [`latest.json`](./latest.json) — update manifest example for version distribution
+- [`latest.yml`](./latest.yml) — update metadata template for electron-updater compatible channels
+- [`SECURITY.md`](./SECURITY.md) — security disclosure and response policy
+- [`SUPPORT.md`](./SUPPORT.md) — user support scope and request process
+- [`RELEASE_POLICY.md`](./RELEASE_POLICY.md) — release versioning and publication policy
+- [`UPDATE_MANIFESTS.md`](./UPDATE_MANIFESTS.md) — manifest contract and publishing requirements
+- [`INTEGRITY_VERIFICATION.md`](./INTEGRITY_VERIFICATION.md) — integrity verification requirements and guidance
 - [`.github/ISSUE_TEMPLATE/bug_report.md`](./.github/ISSUE_TEMPLATE/bug_report.md) — bug report template
 - [`.github/ISSUE_TEMPLATE/feature_request.md`](./.github/ISSUE_TEMPLATE/feature_request.md) — feature request template
+- [`.github/ISSUE_TEMPLATE/config.yml`](./.github/ISSUE_TEMPLATE/config.yml) — issue intake configuration
+- [`.github/workflows/release.yml`](./.github/workflows/release.yml) — release publishing workflow
+- [`.github/CODEOWNERS`](./.github/CODEOWNERS) — repository ownership rules
 - [`REPOSITORY_STRUCTURE.md`](./REPOSITORY_STRUCTURE.md) — repository organization reference

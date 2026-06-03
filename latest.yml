@@ -1,0 +1,8 @@
+version: X.Y.Z
+files:
+  - url: Aegis-Setup-X.Y.Z.exe
+    sha512: <BASE64_SHA512>
+    size: <FILE_SIZE>
+path: Aegis-Setup-X.Y.Z.exe
+sha512: <BASE64_SHA512>
+releaseDate: YYYY-MM-DDTHH:MM:SSZ
