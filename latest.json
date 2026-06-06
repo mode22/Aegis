@@ -1,10 +1,42 @@
 {
-  "product": "Aegis",
-  "channel": "stable",
-  "latest_version": "X.Y.Z",
-  "release_date": "YYYY-MM-DD",
-  "release_notes": "https://github.com/mode22/Aegis/releases/tag/vX.Y.Z",
-  "changelog": "https://github.com/mode22/Aegis/blob/main/CHANGELOG.md",
-  "mandatory_update": false,
-  "notes": "Example update manifest for version distribution."
+  "updater": {
+    "version": "v3.6.0",
+    "channel": "Stable",
+    "update_type": "security",
+    "checksum_algorithm": "SHA-256",
+    "release_date": "2026-06-06T05:17:38Z"
+  },
+  "notes": "Introduced decentralized network integrity diagnostics; Advanced SHA-512 fallback signatures.",
+  "changelog": {
+    "features": [
+      "Introduced decentralized network integrity diagnostics",
+      "Advanced SHA-512 fallback signatures."
+    ],
+    "fixes": [
+      "Resolved race condition in async lock thread",
+      "Fixed memory leaks in local workstation HWID caches."
+    ],
+    "security": [
+      "Reinforced RSA-PSS asymmetric salt-length restrictions against padding attacks."
+    ],
+    "performance": [
+      "Optimized SQLite manifest indexing speed +40%",
+      "Reduced electron render latency."
+    ]
+  },
+  "packages": [
+    {
+      "target": "win-x64",
+      "version": "v3.6.0",
+      "file": "Aegis_Setup.exe",
+      "size": "423.2 MB",
+      "checksum": "6f981833e3773a5891b9fb1d2a75e87b2ba52618000e91fc4309820a8a88f361",
+      "url": "https://github.com//releases/download/v3.6.0/Aegis_Setup.exe"
+    }
+  ],
+  "fallback": {
+    "use_legacy_aes": false,
+    "verification_required": true,
+    "min_client_v": "v3.0.0"
+  }
 }
